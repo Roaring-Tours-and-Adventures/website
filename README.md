@@ -1,0 +1,8 @@
+# Roaring Phase 1 starter — private preview only
+Node 22 recommended. Run npm install, npm test, npm run dev; open http://localhost:3000. Run npm run build before deploying. No dependency installation or Next build was verified in the authoring environment. Pricing unit tests passed. Draft prices are not approved for publication. No stock photos or reviews included. Logo cropped to remove conflicting phone. Official telephone and WhatsApp confirmed: +1 (876) 839-4976.
+
+CMS: create a Sanity project with a public dataset (public marketing content only), add localhost and Vercel preview origin in API CORS settings with credentials for Studio. Copy .env.example to .env.local, fill project ID/dataset. For seeding, create a temporary editor token, set SANITY_WRITE_TOKEN in .env.local, run `node --env-file=.env.local scripts/seed.mjs`, remove token and revoke it. Visit /studio, sign in, edit/publish. Public site refreshes cached content within roughly 60 seconds. Do not store customer information in Sanity. No live preview or full drag/drop; homepage sections can be reordered and pages built from text blocks. Rate display text and structured rules must both be updated. No automatic discounts or live availability. WhatsApp opens a draft, customer must send it; no server-side submission or payment. Manual PayPal invoice after confirming.
+
+Vercel: private GitHub repository, import into commercial Vercel plan, set environment variables (no write token), deploy. Keep SITE_LIVE=false until approved. Do not connect domain until tests and redirects complete. Preserve email MX/TXT records. See accompanying guide.
+
+Phase 1.1 palette: see BRAND_PALETTE.md. Existing content, pricing and booking behavior are unchanged.
